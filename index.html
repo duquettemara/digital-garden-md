@@ -35,7 +35,7 @@
         position: absolute;
         font-family: Noto Sans Pahawh Hmong;
         font-size: 22px;
-        top: 10%;
+        top: 13%;
         left: 10%;
         white-space: nowrap;
         margin: auto;
@@ -48,7 +48,6 @@
         grid-gap: 10px;
         max-width: 630px;
         margin: 0 auto;
-        
       }
 
       .resources > div {
@@ -56,72 +55,25 @@
         height: 200px;
         background-position: center;
         background-size: cover;
-        
       }
 
       @media (max-width: 630px) {
         .resources > div {
           width: calc(33vw - 10px);
           height: calc(33vw - 10px);
-          
         }
-      }
+  
 
+    </style>
   </head>
   <body>
     <div class="header">
       <h1>gender affirming nipple tattoos</h1>
     </div>
-    <div class="why"></div>
+    <div class="why">my top surgery is scheduled for the last day of finals week which means</div>
 
-    <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
-
-    <script>
-      var why = ['my top surgery is scheduled for the last day of finals week which means'],
-        part,
-        i = 0,
-        offset = 0,
-        len = why.length,
-        forwards = true,
-        skip_count = 0,
-        skip_delay = 15,
-        speed = 70;
-      var wordflick = function() {
-        setInterval(function() {
-          if (forwards) {
-            if (offset >= why[i].length) {
-              ++skip_count;
-              if (skip_count == skip_delay) {
-                forwards = false;
-                skip_count = 0;
-              }
-            }
-          } else {
-            if (offset == 0) {
-              forwards = true;
-              i++;
-              offset = 0;
-              if (i >= len) {
-                i = 0;
-              }
-            }
-          }
-          part = why[i].substr(0, offset);
-          if (skip_count == 0) {
-            if (forwards) {
-              offset++;
-            } else {
-              offset--;
-            }
-          }
-          $('.why').text(part);
-        }, speed);
-      };
-
-      $(document).ready(function() {
-        wordflick();
-      });
-    </script>
+      
+    <div class="resources"></div>
     <section class="resources">
       <div style=""></div>
       <div style=""></div>
@@ -133,6 +85,7 @@
       <div style=""></div>
       <div style=""></div>
     </section>
+
 
 
   </body>
