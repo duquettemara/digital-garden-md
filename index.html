@@ -13,6 +13,7 @@
         padding: 0;
         height: 100%;
         display: flex;
+        justify-content: center;
 
       }
 
@@ -42,30 +43,56 @@
         margin: auto;
         min-width: 1000px;
 
-      }
+/*       }
 
-
-      .resources {
-        position: relative;
+      .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-        max-width: 630px;
-        margin: 0 auto;
+        grid-template-areas: 'left center right';
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px;
+        grid-gap: 5px;
+        width: 360px;
+        background-color: magenta;
       }
 
-      .resources > div {
-        width: 350px;
-        height: 200px;
-        background-position: center;
-        background-size: cover;
+      .grid-left {
+        grid-area: left;
       }
 
-      @media (max-width: 700px) {
-        .resources > div {
-          width: calc(33vw - 10px);
-          height: calc(33vw - 10px);
-        }
+      .grid-center {
+        grid-area: center;
+      }
+
+      .grid-right {
+        grid-area: right;
+      }
+
+      .grid-container div {
+        background-color: lightgreen;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-content: top;
+
+      }
+
+      .flex-item {
+        padding: 5px;
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        line-height: 800px;
+
+      }
+
+      componentDidMount() {
+        window.instgrm.Embeds.process(); */
     </style>
   </head>
   <body>
@@ -73,22 +100,23 @@
       <h1>gender affirming paramedical tattoo artists</h1>
     </div>
     <div class="why">i'm having top surgery on the last day of finals week (~one week from today!) so in addition to the mountain of writing and coding i have been tasked with in the coming days, i must also answer the age old questions: do i <strong>need</strong> nipples? do i <strong>want</strong> nipples? and if so, through which method should i obtain them? free nipple grafts? tattoos? sheer willpower?
-    <br><br> ultimately, the decision is personal and must be reflected on and researched individually. however, in my own research on 3D paramedical nipple tattooing, i found that the majority of resources weren't geared towards trans people and i ended up spending a lot of time digging around for explicitly queer friendly artists. in the off chance that someone in a similar situation finds this in the future, i figured that i would replant the artists i find here. i'm rooting for you.
+      <br><br> ultimately, the decision is personal and must be reflected on and researched individually. however, in my own research on 3D paramedical nipple tattooing, i found that the majority of resources weren't geared towards trans people and i ended up spending a lot of time digging around for explicitly queer friendly artists. in the off chance that someone in a similar situation finds this in the future, i figured that i would replant the artists i find here. i'm rooting for you.
     </div>
-    
 
-    <div class="resources"></div>
-    <section class="resources">
-      <div style="url(spruce.png)"></div>
-      <div style=""></div>
-      <div style=""></div>
-      <div style=""></div>
-      <div style=""></div>
-      <div style=""></div>
-      <div style=""></div>
-      <div style=""></div>
-      <div style=""></div>
-    </section>
+<!--     <div class='grid-container'>
+      <div class='grid-left'></div>
+      <div class='grid-center'></div>
+      <div class='grid-right'></div>
+    </div> -->
+
+<!--     <ul class="flex-container">
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+      <li class="flex-item">4</li>
+      <li class="flex-item">5</li>
+      <li class="flex-item">6</li>
+    </ul> -->
 
 
 
